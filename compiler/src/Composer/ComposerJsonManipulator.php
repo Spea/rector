@@ -63,6 +63,7 @@ final class ComposerJsonManipulator
         $json = $this->removeDevKeys($json);
 
         $json = $this->replacePHPStanWithPHPStanSrc($json);
+
         $encodedJson = Json::encode($json, Json::PRETTY);
 
         // show diff
