@@ -8,6 +8,7 @@ final class ExampleTest extends TestCase
 {
     public function testOne(): void
     {
+        Foo::create()->bar();
         $prophecy = $this->prophesize(\AnInterface::class);
     }
 }
@@ -25,6 +26,7 @@ final class ExampleTest extends TestCase
     use \Prophecy\PhpUnit\ProphecyTrait;
     public function testOne(): void
     {
+        Foo::create()->bar();
         $prophecy = $this->prophesize(\AnInterface::class);
     }
 }
